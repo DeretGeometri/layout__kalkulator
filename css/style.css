@@ -1,0 +1,65 @@
+:root{
+    --warna_bayanganSatu: rgba(55,74,170,.1);
+    --warna_bayanganDua: rgba(255,255,255,1);
+}
+
+*{
+    box-sizing: border-box;
+    pointer-events: none;
+    font-family: sans-serif;
+}
+
+
+.calc{
+    margin: auto;
+    width: 414px;
+    height: 736px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    padding: 36px;
+    box-shadow: 10px 10px 15px var(--warna_bayanganSatu), -10px -10px 25px var(--warna_bayanganDua) ;
+}
+
+.calc__display__layerSatu{
+    width: 342px;
+    height: 131px;
+    border: 2px solid var(--warna_bayanganSatu);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--warna_bayanganSatu), -5px -5px 10px var(--warna_bayanganDua);
+}
+
+.calc__display__layerDua{
+    width: 330px;
+    height: 119px;
+    border: 2px solid var(--warna_bayanganSatu);
+    border-radius: 10px;
+    margin: 4px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.calc__display--output{
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.calc__numerik{
+    display: grid;
+    grid-template: repeat(5, 78px) / repeat(4, 78px);
+    grid-gap: 10px;
+    margin-top: 60px;
+}
+
+.calc__numerik > div{
+    text-align: center;
+    line-height: 78px;
+    background-color: var(--warna_bayanganSatu);
+    border: 2px solid var(--warna_bayanganSatu);
+    box-shadow: 5px 5px 10px var(--warna_bayanganSatu), -5px -5px 10px var(--warna_bayanganDua);
+    border-radius: 5px;
+}
+
+.calc__numerik--0{
+    grid-column: span 2;
+}
